@@ -4,6 +4,7 @@
   <title>devops field guide2</title>
   <link href="/theme/html/stylesheets/styles.css" media="all" rel="stylesheet" type="text/css"/>
   <link href="/theme/html/stylesheets/shared.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="/theme/html/stylesheets/syntax.css" media="all" rel="stylesheet" type="text/css"/>
 
    <script type="text/javascript" src="/theme/html/javascripts/jquery.js"> </script>
    <script type="text/javascript" src="/theme/html/javascripts/bootstrap.min.js"> </script>
@@ -17,7 +18,7 @@
  
   <div class="navbar">
     <div class="container">
-      <img style="margin:40px" src="http://www.oreilly.com/biocoder/oreilly-logo-reversed-156x28.png"/>
+      <img style="margin:40px" src="/theme/html/logo-white.svg"/>
       <ul class="nav pull-left">
         <li id="dropdown-1"/>
       </ul>
@@ -31,13 +32,13 @@
 	
       <div class="row-fluid down40">	
 	<div class="span8">		
-           <section data-type="chapter" data-pdf-bookmark="Chapter 6. The monitoring infrastructure is critical." id="idp797680">
+           <section data-type="chapter" data-pdf-bookmark="Chapter 6. The monitoring infrastructure is critical." id="idp922624">
 <h1>The monitoring infrastructure is critical.</h1>
 
 <p>The monitoring infrastructure is perhaps the most foreign element in the devops stack. Of all the parts of the software infrastructure, this was perhaps the most opaque. Â A disk would fill up, the monitoring system would alert the systems group, and they would quietly fix it without the developer being any the wiser.</p>
 <p>However, as more of the traditional admin functions spread to other parts of the organization, there’s increasing need for developers to view the monitoring infrastructure as just another part of the app. In addition to providing the sorts of critical alerts on failures, many monitoring tools are tailored to the application stack and can be used to pinpoint performance bottlenecks. </p>
 <p>Most of these systems have two components: a client and a server.  The client is an agent that runs on the server you want to monitor; it is typically installed on the machine by a chef or puppet recipe (or Ansible or Salt or whatever tool you are using).  Whether it’s a daemon or a cron job, the client periodically reports back key metrics to the central server.  The server provides the reporting interface, notification systems, and other functions that are required to smoothly maintain a large number of systems.</p>
-<section data-type="sect1" data-pdf-bookmark="Tools" id="idp806784">
+<section data-type="sect1" data-pdf-bookmark="Tools" id="idp932800">
 <h1>Tools</h1>
 
 <p>Here are some monitoring tools you might encounter:</p>
@@ -62,7 +63,7 @@
 	  </div>
 	   
 	   <h2>In this issue</h2>
-	   <nav data-type="toc" id="idp77296"/>
+	   <nav data-type="toc" id="idp78320"/>
 	</div>
       </div>
 

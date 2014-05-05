@@ -4,6 +4,7 @@
   <title>devops field guide2</title>
   <link href="/theme/html/stylesheets/styles.css" media="all" rel="stylesheet" type="text/css"/>
   <link href="/theme/html/stylesheets/shared.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="/theme/html/stylesheets/syntax.css" media="all" rel="stylesheet" type="text/css"/>
 
    <script type="text/javascript" src="/theme/html/javascripts/jquery.js"> </script>
    <script type="text/javascript" src="/theme/html/javascripts/bootstrap.min.js"> </script>
@@ -17,7 +18,7 @@
  
   <div class="navbar">
     <div class="container">
-      <img style="margin:40px" src="http://www.oreilly.com/biocoder/oreilly-logo-reversed-156x28.png"/>
+      <img style="margin:40px" src="/theme/html/logo-white.svg"/>
       <ul class="nav pull-left">
         <li id="dropdown-1"/>
       </ul>
@@ -31,7 +32,7 @@
 	
       <div class="row-fluid down40">	
 	<div class="span8">		
-           <section data-type="chapter" data-pdf-bookmark="Chapter 3. The codebase is in git." id="idp729968">
+           <section data-type="chapter" data-pdf-bookmark="Chapter 3. The codebase is in git." id="idp855952">
 <h1>The codebase is in git.</h1>
 
 <p>The version control system (VCS) is the heart of the process. At the most basic level, a VCS allows developers to keep track of all the changes made to a set of files and be able to roll back to specific points in time in case something screws up. In some systems, like <a href="http://subversion.apache.org/">Subversion</a>, the code is checked out and then checked back in from a central repository. If there is a conflict between two developers’ files (for example, both of them edited the same line of code), then the two version must be merged together. This can be a painful process.</p>
@@ -47,7 +48,7 @@
 <li>the merged copy preserves the full version history of all the distributed copies</li>
 </ul>
 <p>In addition to these coordination functions, most version control system also offer a feature called a <em>hook</em>. A hook is a process that fires once a specific event, like a commit, happens to the repository. Hooks can be defined in the repo itself, but also in the hosting service. For example, GitHub lets you define “service” hooks that are called whenever a specific event occurs. These hooks are the tie-in to the continuous integration (CI server).</p>
-<section data-type="sect1" data-pdf-bookmark="Tools" id="idp743568">
+<section data-type="sect1" data-pdf-bookmark="Tools" id="idp875600">
 <h1>Tools</h1>
 
 <p>Here are the key version control systems:</p>
@@ -82,7 +83,7 @@
 	  </div>
 	   
 	   <h2>In this issue</h2>
-	   <nav data-type="toc" id="idp77296"/>
+	   <nav data-type="toc" id="idp78320"/>
 	</div>
       </div>
 
