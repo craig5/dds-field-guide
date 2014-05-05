@@ -1,31 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
-<meta charset="utf-8"/>
-<title>devops field guide2</title>
-   <link href="theme/html/atlas_assets.css" rel="stylesheet" type="text/css"/>
-<p><link rel="stylesheet" type="text/css" href="theme/html/html.css"/></p>
-   <link href="theme/html/syntax.css" rel="stylesheet" type="text/css"/>
-   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <title>devops field guide2</title>
+  <link href="/theme/html/stylesheets/styles.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="/theme/html/stylesheets/shared.css" media="all" rel="stylesheet" type="text/css"/>
 
-<p><a href="https://github.com/odewahn/devops-fg2/issues"><img alt="Discuss on GitHub" src="https://s3.amazonaws.com/orm-atlas-media/discuss_right_gray_6d6d6d.png" style="z-index: 999999999; position: absolute; top: 0; right: 0; border: 0;"/></a></p>
+   <script type="text/javascript" src="/theme/html/javascripts/jquery.js"> </script>
+   <script type="text/javascript" src="/theme/html/javascripts/bootstrap.min.js"> </script>
+   <script type="text/javascript" src="/theme/html/javascripts/disqus.js"> </script>
 
-<div class="navbar">
-<div class="container">
-<ul class="nav pull-right">
-	<li><a href="ch02.html">Previous</a></li>
-	<li><a href="ch04.html">Next</a></li>
-</ul>
-</div>
-</div>
-
-<div class="container" id="main">
-<div class="row">
+   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
+</head>
+<body>
+ 
+  <div class="navbar">
+    <div class="container">
+      <img style="margin:40px" src="http://www.oreilly.com/biocoder/oreilly-logo-reversed-156x28.png"/>
+      <ul class="nav pull-left">
+        <li id="dropdown-1"/>
+      </ul>
+    </div>
+    <div class="subhead">
+    </div>
+  </div>
 
-<div class="span8">
 
-   <section data-type="chapter" data-pdf-bookmark="Chapter 3. The codebase is in git." id="idp856496">
+  <div class="container" id="main">
+	
+      <div class="row-fluid down40">	
+	<div class="span8">		
+           <section data-type="chapter" data-pdf-bookmark="Chapter 3. The codebase is in git." id="idp729968">
 <h1>The codebase is in git.</h1>
 
 <p>The version control system (VCS) is the heart of the process. At the most basic level, a VCS allows developers to keep track of all the changes made to a set of files and be able to roll back to specific points in time in case something screws up. In some systems, like <a href="http://subversion.apache.org/">Subversion</a>, the code is checked out and then checked back in from a central repository. If there is a conflict between two developers’ files (for example, both of them edited the same line of code), then the two version must be merged together. This can be a painful process.</p>
@@ -41,7 +47,7 @@
 <li>the merged copy preserves the full version history of all the distributed copies</li>
 </ul>
 <p>In addition to these coordination functions, most version control system also offer a feature called a <em>hook</em>. A hook is a process that fires once a specific event, like a commit, happens to the repository. Hooks can be defined in the repo itself, but also in the hosting service. For example, GitHub lets you define “service” hooks that are called whenever a specific event occurs. These hooks are the tie-in to the continuous integration (CI server).</p>
-<section data-type="sect1" data-pdf-bookmark="Tools" id="idp876432">
+<section data-type="sect1" data-pdf-bookmark="Tools" id="idp743568">
 <h1>Tools</h1>
 
 <p>Here are the key version control systems:</p>
@@ -65,40 +71,52 @@
 </ul>
 </section>
 </section>
-   <div class="navigation">
-      <ul>
+        </div>
+        <div class="span4">
+
+	  <div class="navigation">
+	      <ul>
 	        <li class="prev"><a href="ch02.html">Previous</a></li>
 	        <li class="next"><a href="ch04.html">Next</a></li>
-      </ul>
-   </div>
-   
-</div>
+	      </ul>
+	  </div>
+	   
+	   <h2>In this issue</h2>
+	   <nav data-type="toc" id="idp77296"/>
+	</div>
+      </div>
 
-<div class="span3 offset1">
-   <h2>Contents:</h2>
-   <nav data-type="toc" id="idp68416"/>
-</div>
+      <div class="row-fluid">
+	 <div class="span12">
+            <div id="disqus_thread"/>
+	</div>
+      </div>
 
-</div>
-</div>
 
-<footer>
-<div class="container">
-<div class="row">
-<div class="span5">
-<p>© 2013, O'Reilly Media, Inc.</p>
+  </div>
 
-<p class="small">All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.</p>
-</div>
+  <footer>
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span4">
+          <span class="logo"/>
+          <p>© 2014, O'Reilly Media, Inc.</p>
+          <p class="small">All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.</p>
+        </div>
+        <div class="span4">
+          <ul>
+            <li>Legal</li>
+            <li><a href="/tos">Terms of Service</a></li>
+            <li><a href="http://oreilly.com/oreilly/privacy.csp">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="span4">
+	   <a class="btn btn-medium btn-info" href="https://github.com/oreillymedia/pyxie-feedback/issues" target="_blank">Feedback</a>
+	</div>
+      </div>
+    </div>
+  </footer>
 
-<div class="span3 offset1">
-<ul>
-	<li>Legal</li>
-	<li><a href="/docs/terms-of-service">Terms of Service</a></li>
-	<li><a href="http://oreilly.com/oreilly/privacy.csp">Privacy Policy</a></li>
-</ul>
-</div>
-</div>
-</div>
-</footer>
+
+</body>
 </html>
