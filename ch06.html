@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-  <title>devops field guide2</title>
+  <title>DevOps Field Guide</title>
   <link href="/theme/html/stylesheets/styles.css" media="all" rel="stylesheet" type="text/css"/>
   <link href="/theme/html/stylesheets/shared.css" media="all" rel="stylesheet" type="text/css"/>
   <link href="/theme/html/stylesheets/syntax.css" media="all" rel="stylesheet" type="text/css"/>
@@ -32,13 +32,13 @@
 	
       <div class="row-fluid down40">	
 	<div class="span8">		
-           <section data-type="chapter" data-pdf-bookmark="Chapter 6. The monitoring infrastructure is critical." id="idp922624">
-<h1>The monitoring infrastructure is critical.</h1>
+           <section data-type="chapter" data-pdf-bookmark="Chapter 6. The monitoring infrastructure is critical" id="idp784496">
+<h1>The monitoring infrastructure is critical</h1>
 
 <p>The monitoring infrastructure is perhaps the most foreign element in the devops stack. Of all the parts of the software infrastructure, this was perhaps the most opaque. Â A disk would fill up, the monitoring system would alert the systems group, and they would quietly fix it without the developer being any the wiser.</p>
 <p>However, as more of the traditional admin functions spread to other parts of the organization, there’s increasing need for developers to view the monitoring infrastructure as just another part of the app. In addition to providing the sorts of critical alerts on failures, many monitoring tools are tailored to the application stack and can be used to pinpoint performance bottlenecks. </p>
 <p>Most of these systems have two components: a client and a server.  The client is an agent that runs on the server you want to monitor; it is typically installed on the machine by a chef or puppet recipe (or Ansible or Salt or whatever tool you are using).  Whether it’s a daemon or a cron job, the client periodically reports back key metrics to the central server.  The server provides the reporting interface, notification systems, and other functions that are required to smoothly maintain a large number of systems.</p>
-<section data-type="sect1" data-pdf-bookmark="Tools" id="idp932800">
+<section data-type="sect1" data-pdf-bookmark="Tools" id="idp796576">
 <h1>Tools</h1>
 
 <p>Here are some monitoring tools you might encounter:</p>
@@ -62,8 +62,82 @@
 	      </ul>
 	  </div>
 	   
-	   <h2>In this issue</h2>
-	   <nav data-type="toc" id="idp78320"/>
+	   <h2>Key Themes</h2>
+	   <nav data-type="toc" id="idp78320"><ol><li data-type="chapter"><a href="ch01.html#idm4367520">The cloud is the default platform</a><ol>
+
+
+
+
+
+
+
+
+<li data-type="sect1"><a href="ch01.html#idm1281936">Tools</a><ol>
+
+
+
+<li data-type="sect2"><a href="ch01.html#idm1275760">Traditional Cloud Providers</a></li>
+</ol></li>
+<li data-type="sect1"><a href="ch01.html#idp425648">Hosted PaaS</a></li>
+<li data-type="sect1"><a href="ch01.html#idp430416">Internal Services</a></li>
+</ol></li><li data-type="chapter"><a href="ch02.html#idp411248">CI servers deploy code, not ops</a><ol>
+
+
+
+
+
+
+<li data-type="sect1"><a href="ch02.html#idp714688">Tools</a></li>
+</ol></li><li data-type="chapter"><a href="ch03.html#idp720208">The codebase is in git</a><ol>
+
+
+
+
+
+
+
+<li data-type="sect1"><a href="ch03.html#idp733632">Tools</a></li>
+</ol></li><li data-type="chapter"><a href="ch04.html#idp750976">The entire application runs locally in development</a><ol>
+
+
+
+
+<li data-type="sect1"><a href="ch04.html#idp753616">Tools</a><ol>
+
+
+
+
+<li data-type="sect2"><a href="ch04.html#idp760192">Replicating 3rd party APIs locally</a></li>
+</ol></li>
+</ol></li><li data-type="chapter"><a href="ch05.html#idp764192">The environment is automated in the code</a><ol>
+
+
+
+
+<li data-type="sect1"><a href="ch05.html#idp770336">Tools</a></li>
+</ol></li><li data-type="chapter"><a href="ch06.html#idp784496">The monitoring infrastructure is critical</a><ol>
+
+
+
+
+
+<li data-type="sect1"><a href="ch06.html#idp796576">Tools</a></li>
+</ol></li><li data-type="chapter"><a href="ch07.html#idp791216">Tests done in code, not by a QA department</a><ol>
+
+
+
+<li data-type="sect1"><a href="ch07.html#idp806080">Tools</a></li>
+</ol></li><li data-type="chapter"><a href="ch08.html#idp810064">Language stack quick reference</a><ol>
+
+
+
+
+<li data-type="sect1"><a href="ch08.html#idp811232">Ruby</a></li>
+<li data-type="sect1"><a href="ch08.html#idp821776">Python</a></li>
+<li data-type="sect1"><a href="ch08.html#idp828896">node</a></li>
+<li data-type="sect1"><a href="ch08.html#idp835744">Java</a></li>
+<li data-type="sect1"><a href="ch08.html#idp838432">Go</a></li>
+</ol></li></ol></nav>
 	</div>
       </div>
 
