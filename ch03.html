@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="utf-8"/>
+<title>devops field guide2</title>
+   <link href="theme/html/atlas_assets.css" rel="stylesheet" type="text/css"/>
+<p><link rel="stylesheet" type="text/css" href="theme/html/html.css"/></p>
+   <link href="theme/html/syntax.css" rel="stylesheet" type="text/css"/>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<p><a href="https://github.com/odewahn/devops-fg2/issues"><img alt="Discuss on GitHub" src="https://s3.amazonaws.com/orm-atlas-media/discuss_right_gray_6d6d6d.png" style="z-index: 999999999; position: absolute; top: 0; right: 0; border: 0;"/></a></p>
+
+<div class="navbar">
+<div class="container">
+<ul class="nav pull-right">
+	<li><a href="ch02.html">Previous</a></li>
+	<li><a href="ch04.html">Next</a></li>
+</ul>
+</div>
+</div>
+
+<div class="container" id="main">
+<div class="row">
+
+
+
+<div class="span8">
+
+   <section data-type="chapter" data-pdf-bookmark="Chapter 3. The codebase is in git." id="idp856496">
+<h1>The codebase is in git.</h1>
+
+<p>The version control system (VCS) is the heart of the process. At the most basic level, a VCS allows developers to keep track of all the changes made to a set of files and be able to roll back to specific points in time in case something screws up. In some systems, like <a href="http://subversion.apache.org/">Subversion</a>, the code is checked out and then checked back in from a central repository. If there is a conflict between two developers’ files (for example, both of them edited the same line of code), then the two version must be merged together. This can be a painful process.</p>
+<p>In contrast, distributed version control systems (DVCS), like <a href="http://git-scm.com/">git</a>, are the heart of most new style development processes. Rather than having a central, master copy that makes it difficult and expensive to merge a lot of contributions from developers, a DVCS makes it simple (well, simpler!) to have multiple people all working on the same codebase simultaneously in different <em>branches</em>, and that these branches can be easily merged back together in a <em>master</em> branch.</p>
+<p>While there are many different work styles, such as <a href="http://nvie.com/posts/a-successful-git-branching-model/">git flow</a>, the basic DVCS process is:</p>
+<ul>
+<li>there is an agreed upon master repository, which is often on a public service like <a href="https://github.com/">GitHub</a>, <a href="https://bitbucket.org/">BitBucket</a> or an internal server like <a href="https://www.gitlab.com/">GitLab</a> or <a href="http://mercurial.selenic.com/">Mercurial</a></li>
+<li>each developer clones the master repository to his or her local machine</li>
+<li>the developer creates a new branch, usually for a specific feature</li>
+<li>the developer makes commits against the local copy</li>
+<li>once the feature is done, he or she merges the branch back into the master branch and pushes the change back to the master</li>
+<li>other developers pull from the and merge their branch</li>
+<li>the merged copy preserves the full version history of all the distributed copies</li>
+</ul>
+<p>In addition to these coordination functions, most version control system also offer a feature called a <em>hook</em>. A hook is a process that fires once a specific event, like a commit, happens to the repository. Hooks can be defined in the repo itself, but also in the hosting service. For example, GitHub lets you define “service” hooks that are called whenever a specific event occurs. These hooks are the tie-in to the continuous integration (CI server).</p>
+<section data-type="sect1" data-pdf-bookmark="Tools" id="idp876432">
+<h1>Tools</h1>
+
+<p>Here are the key version control systems:</p>
+<ul>
+<li><a href="http://git-scm.com/">git</a>. “Git is a <a href="http://git-scm.com/about/free-and-open-source">free and open source</a> distributed version control system designed to handle everything from small to very large projects with speed and efficiency.”</li>
+<li><a href="http://mercurial.selenic.com/">mercurial</a>. “Mercurial is a free, distributed source control management tool. It efficiently handles projects of any size and offers an easy and intuitive interface.”</li>
+</ul>
+<p>Hosting services provide a central point where you can manage and store all your code repositories. In addition to raw code storage, they usually offer features like issue tracking, collaborator management, and other process-oriented services.</p>
+<p>The following table are hosting services managed by a 3rd party.  The pricing model is typically based on a block of repositories for a monthly fee.</p>
+<ul>
+<li><a href="https://github.com/">GitHub</a>.  One of the largest and most successful git hosting services.</li>
+<li><a href="https://bitbucket.org/">BitBucket</a>.  <a href="https://www.atlassian.com/">Atlassian</a>’s git hosting solution.</li>
+<li><a href="https://www.gitlab.com/">GitLab.com</a>. A hosting service based on the popular open source project GitLab HQ.</li>
+<li><a href="https://gitorious.org/">Gitorious</a>. Similar to GitLab, a hosted version of an open source tool that you could install and maintain yourself.</li>
+</ul>
+<p>These are services that you can install and manage in your own environment.</p>
+<ul>
+<li><a href="https://github.com/gitlabhq/gitlabhq">GitLab</a>.  “Project management and code hosting application.”</li>
+<li><a href="https://github.com/tv42/gitosis">Gitosis</a>. “software for hosting git repositories”</li>
+<li><a href="https://gitorious.org/gitorious">Gitorious</a>. The self-hosted version of gitorious.org. (It’s a rails app.)</li>
+</ul>
+</section>
+</section>
+   <div class="navigation">
+      <ul>
+	        <li class="prev"><a href="ch02.html">Previous</a></li>
+	        <li class="next"><a href="ch04.html">Next</a></li>
+      </ul>
+   </div>
+   
+</div>
+
+<div class="span3 offset1">
+   <h2>Contents:</h2>
+   <nav data-type="toc" id="idp68416"/>
+</div>
+
+</div>
+</div>
+
+<footer>
+<div class="container">
+<div class="row">
+<div class="span5">
+<p>© 2013, O'Reilly Media, Inc.</p>
+
+<p class="small">All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.</p>
+</div>
+
+<div class="span3 offset1">
+<ul>
+	<li>Legal</li>
+	<li><a href="/docs/terms-of-service">Terms of Service</a></li>
+	<li><a href="http://oreilly.com/oreilly/privacy.csp">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</html>
