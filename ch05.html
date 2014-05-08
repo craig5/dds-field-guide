@@ -37,16 +37,17 @@
 	
       <div class="row-fluid down40">	
          <div class="span8">		
-            <section data-type="chapter" data-pdf-bookmark="Chapter 5. The environment is automated in the code" id="idp772656">
+            <section data-type="chapter" data-pdf-bookmark="Chapter 5. The environment is automated in the code" id="idp409408">
 <h1>The environment is automated in the code</h1>
 
+<p><span class="drop fa fa-cogs fa-5x pull-left fa-border"/></p>
 <p>A key idea (maybe <em>the</em> key idea) of devops is that the environment in which your code will run should be modeled as code, and not be some separate thing that is a black box. (And, as we get a bit further down the stack, should be versioned with the code, as well.) It seems pretty basic, but the idea is that you should have a “recipe” that allows you to recreate the environment at any moment. Some of the key parts of managing the environment include:</p>
 <ul>
 <li><em>General configuration</em>. General configuration includes setting up the basic requirements for the app to even run -- things like ensuring that whatever directory it will live in actually exists, creating the user a service will run as, specifying where log files should be stored, exposing (or blocking) the proper ports, setting any required permissions, installing any license or cert files, updating packages, and on and on. In short, anything that an app needs at the basic operating system level.</li>
 <li><em>Installation of the application stack</em>. If you’re writing a Rails app, for example, you’ll need to have the required versions of Ruby, Rails, bundler, and anything else you need. The same goes for any other stack.</li>
 <li><em>Installation and configuration of the required backing services</em>. The <a href="http://12factor.net">12 Factor App</a> describes <a href="http://12factor.net/backing-services">backing services</a> as “any service the app consumes over the network as part of its normal operation. Examples include datastores (such as MySQL or CouchDB), messaging/queueing systems (such as RabbitMQ or Beanstalkd), SMTP services for outbound email (such as Postfix), and caching systems (such as Memcached).” Backing services can also include 3rd party services, like Amazon AWS (SQS, dynamodb etc), <a href="http://developer.github.com/v3/">GitHub</a>, <a href="https://dev.twitter.com/">Twitter</a>, <a href="https://www.parse.com/">Parse</a>, and a host of other services. Ideally, the “code for a twelve-factor app makes no distinction between local and third party services.”</li>
 </ul>
-<section data-type="sect1" data-pdf-bookmark="Tools" id="idp785776">
+<section data-type="sect1" data-pdf-bookmark="Tools" id="idp415248">
 <h1>Tools</h1>
 
 <p>The following table lists some of the configuration and environment automation tools you might encounter:</p>
@@ -64,7 +65,7 @@
          </div>
          <div class="span4">
 	   <h2>Key Themes</h2>
-              <nav data-type="toc" id="idp79808"><ol><li data-type="chapter"><a href="ch01.html#idm401248">The cloud is the default platform</a><ol>
+              <nav data-type="toc" id="idp5910880"><ol><li data-type="chapter"><a href="ch01.html#idm4734096">The cloud is the default platform</a><ol>
 
 
 
@@ -74,15 +75,15 @@
 
 
 
-<li data-type="sect1"><a href="ch01.html#idm1279104">Tools</a><ol>
+<li data-type="sect1"><a href="ch01.html#idm1644608">Tools</a><ol>
 
 
 
-<li data-type="sect2"><a href="ch01.html#idm1281856">Traditional Cloud Providers</a></li>
+<li data-type="sect2"><a href="ch01.html#idm1640832">Traditional Cloud Providers</a></li>
 </ol></li>
-<li data-type="sect1"><a href="ch01.html#idp432848">Hosted PaaS</a></li>
-<li data-type="sect1"><a href="ch01.html#idp436592">Internal Services</a></li>
-</ol></li><li data-type="chapter"><a href="ch02.html#idm54144">CI servers deploy code, not ops</a><ol>
+<li data-type="sect1"><a href="ch01.html#idp68320">Hosted PaaS</a></li>
+<li data-type="sect1"><a href="ch01.html#idp73472">Internal Services</a></li>
+</ol></li><li data-type="chapter"><a href="ch02.html#idm422816">CI servers deploy code, not ops</a><ol>
 
 
 
@@ -90,8 +91,8 @@
 
 
 
-<li data-type="sect1"><a href="ch02.html#idp721392">Tools</a></li>
-</ol></li><li data-type="chapter"><a href="ch03.html#idp727312">The codebase is in git</a><ol>
+<li data-type="sect1"><a href="ch02.html#idp356224">Tools</a></li>
+</ol></li><li data-type="chapter"><a href="ch03.html#idp363888">The codebase is in git</a><ol>
 
 
 
@@ -100,48 +101,52 @@
 
 
 
-<li data-type="sect1"><a href="ch03.html#idp742224">Tools</a></li>
-</ol></li><li data-type="chapter"><a href="ch04.html#idp759088">The entire application runs locally in development</a><ol>
+<li data-type="sect1"><a href="ch03.html#idp383952">Tools</a></li>
+</ol></li><li data-type="chapter"><a href="ch04.html#idp364192">The entire application runs locally in development</a><ol>
 
 
 
 
-<li data-type="sect1"><a href="ch04.html#idp761712">Tools</a><ol>
+
+<li data-type="sect1"><a href="ch04.html#idp398672">Tools</a><ol>
 
 
 
 
-<li data-type="sect2"><a href="ch04.html#idp770192">Replicating 3rd party APIs locally</a></li>
+<li data-type="sect2"><a href="ch04.html#idp407008">Replicating 3rd party APIs locally</a></li>
 </ol></li>
-</ol></li><li data-type="chapter"><a href="ch05.html#idp772656">The environment is automated in the code</a><ol>
-
-
-
-
-<li data-type="sect1"><a href="ch05.html#idp785776">Tools</a></li>
-</ol></li><li data-type="chapter"><a href="ch06.html#idp790832">The monitoring infrastructure is critical</a><ol>
+</ol></li><li data-type="chapter"><a href="ch05.html#idp409408">The environment is automated in the code</a><ol>
 
 
 
 
 
-<li data-type="sect1"><a href="ch06.html#idp804752">Tools</a></li>
-</ol></li><li data-type="chapter"><a href="ch07.html#idp814880">Tests done in code, not by a QA department</a><ol>
-
-
-
-<li data-type="sect1"><a href="ch07.html#idp810944">Tools</a></li>
-</ol></li><li data-type="chapter"><a href="ch08.html#idp817184">Appendix A: Language stack quick reference</a><ol>
+<li data-type="sect1"><a href="ch05.html#idp415248">Tools</a></li>
+</ol></li><li data-type="chapter"><a href="ch06.html#idp432384">The monitoring infrastructure is critical</a><ol>
 
 
 
 
-<li data-type="sect1"><a href="ch08.html#idp828048">Ruby</a></li>
-<li data-type="sect1"><a href="ch08.html#idp832336">Python</a></li>
-<li data-type="sect1"><a href="ch08.html#idp839184">node</a></li>
-<li data-type="sect1"><a href="ch08.html#idp845984">Java</a></li>
-<li data-type="sect1"><a href="ch08.html#idp848544">Go</a></li>
-</ol></li><li data-type="chapter"><a href="ch09.html#idp851536">Appendix B: Required Reading</a></li></ol></nav>
+
+
+<li data-type="sect1"><a href="ch06.html#idp444128">Tools</a></li>
+</ol></li><li data-type="chapter"><a href="ch07.html#idp432640">Tests done in code, not by a QA department</a><ol>
+
+
+
+<li data-type="sect1"><a href="ch07.html#idp452400">Tools</a></li>
+</ol></li><li data-type="chapter"><a href="ch08.html#idp455168">Appendix A: Language stack quick reference</a><ol>
+
+
+
+
+
+<li data-type="sect1"><a href="ch08.html#idp466944">Ruby</a></li>
+<li data-type="sect1"><a href="ch08.html#idp471136">Python</a></li>
+<li data-type="sect1"><a href="ch08.html#idp478288">node</a></li>
+<li data-type="sect1"><a href="ch08.html#idp485136">Java</a></li>
+<li data-type="sect1"><a href="ch08.html#idp487824">Go</a></li>
+</ol></li><li data-type="chapter"><a href="ch09.html#idp490928">Appendix B: Required Reading</a></li></ol></nav>
 	   <div class="navigation">
 	      <ul>
 	        <li class="prev"><a href="ch04.html">Previous</a></li>
