@@ -37,13 +37,13 @@
 	
       <div class="row-fluid down40">	
          <div class="span8">		
-            <section data-type="chapter" data-pdf-bookmark="Chapter 4. The entire application runs locally in development" id="idp762880">
+            <section data-type="chapter" data-pdf-bookmark="Chapter 4. The entire application runs locally in development" id="idp762464">
 <h1>The entire application runs locally in development</h1>
 
 <p><span class="drop fa fa-laptop fa-5x pull-left fa-border"/></p>
 <p>One of the key breakthroughs of the devops movement is it gives developers a simple way to install and run the entire app on their local machine. Being able to run it on their own system encourages creativity and flexibility, and make development much more fun and productive.</p>
 <p><a href="http://www.vagrantup.com/">Vagrant</a> is the key tool here -- basically, it takes the recipes you created with your environment tool (i.e., your chef or puppet files) and <em>provisions</em> (creates) a virtual machine that runs in a tool like <a href="https://www.virtualbox.org/">Virtualbox</a> or <a href="http://www.vmware.com/">VMWare</a>. Vagrant automatically maps a virtual drive from the virtual instance back to the host machine, allowing the developer to use his or her favorite editor / IDE, but still run the application in an environment that matches the production environment as closely as possible.</p>
-<section data-type="sect1" data-pdf-bookmark="Tools" id="idp765968">
+<section data-type="sect1" data-pdf-bookmark="Tools" id="idp765808">
 <h1>Tools</h1>
 
 <p>The following table summarizes tools you will encounter:</p>
@@ -52,7 +52,7 @@
 <li><a href="https://www.virtualbox.org/">virtualbox</a>. “VirtualBox is a powerful x86 and AMD64/Intel64  <a href="https://www.virtualbox.org/wiki/Virtualization">virtualization</a> product for enterprise as well as home use.” Free and open source! </li>
 <li><a href="http://www.vmware.com/">vmware</a>. One of the original virtualization solutions; Vagrant has a paid version that targets vmware fusion.</li>
 </ul>
-<section data-type="sect2" data-pdf-bookmark="Replicating 3rd party APIs locally" id="idp774944">
+<section data-type="sect2" data-pdf-bookmark="Replicating 3rd party APIs locally" id="idp774480">
 <h2>Replicating 3rd party APIs locally</h2>
 
 <p>The develop “everything on localhost” approach breaks down somewhat when an application makes extensive use of 3rd party APIs.  Clearly, you could not siply install Twitter or Facebook on your local machine.  To get around this, there are a number of tools for mocking up the API results returned by these services.  These include:</p>
@@ -78,7 +78,7 @@
 
 
 	   <h2>Key Themes</h2>
-              <nav data-type="toc" id="idp5935072"><ol><li data-type="chapter"><a href="ch01.html#idm53424">The cloud is the default platform</a><ol>
+              <nav data-type="toc" id="idp6093696"><ol><li data-type="chapter"><a href="ch01.html#idm4368672">The cloud is the default platform</a><ol>
 
 
 
@@ -87,10 +87,10 @@
 
 
 
-<li data-type="sect1"><a href="ch01.html#idm702848">Traditional Cloud Providers</a></li>
-<li data-type="sect1"><a href="ch01.html#idp430064">Hosted PaaS</a></li>
-<li data-type="sect1"><a href="ch01.html#idp441888">Internal Services</a></li>
-</ol></li><li data-type="chapter"><a href="ch02.html#idp710112">CI servers deploy code, not ops</a><ol>
+<li data-type="sect1"><a href="ch01.html#idm1284720">Traditional Cloud Providers</a></li>
+<li data-type="sect1"><a href="ch01.html#idp430384">Hosted PaaS</a></li>
+<li data-type="sect1"><a href="ch01.html#idp442624">Internal Services</a></li>
+</ol></li><li data-type="chapter"><a href="ch02.html#idp710240">CI servers deploy code, not ops</a><ol>
 
 
 
@@ -98,8 +98,8 @@
 
 
 
-<li data-type="sect1"><a href="ch02.html#idp725776">Tools</a></li>
-</ol></li><li data-type="chapter"><a href="ch03.html#idp731392">The codebase is in git</a><ol>
+<li data-type="sect1"><a href="ch02.html#idp726016">Tools</a></li>
+</ol></li><li data-type="chapter"><a href="ch03.html#idp731088">The codebase is in git</a><ol>
 
 
 
@@ -108,53 +108,53 @@
 
 
 
-<li data-type="sect1"><a href="ch03.html#idp751968">Tools</a></li>
-</ol></li><li data-type="chapter"><a href="ch04.html#idp762880">The entire application runs locally in development</a><ol>
+<li data-type="sect1"><a href="ch03.html#idp751664">Tools</a></li>
+</ol></li><li data-type="chapter"><a href="ch04.html#idp762464">The entire application runs locally in development</a><ol>
 
 
 
 
 
-<li data-type="sect1"><a href="ch04.html#idp765968">Tools</a><ol>
+<li data-type="sect1"><a href="ch04.html#idp765808">Tools</a><ol>
 
 
 
 
-<li data-type="sect2"><a href="ch04.html#idp774944">Replicating 3rd party APIs locally</a></li>
+<li data-type="sect2"><a href="ch04.html#idp774480">Replicating 3rd party APIs locally</a></li>
 </ol></li>
-</ol></li><li data-type="chapter"><a href="ch05.html#idp777616">The environment is automated in the code</a><ol>
+</ol></li><li data-type="chapter"><a href="ch05.html#idp777296">The environment is automated in the code</a><ol>
 
 
 
 
 
-<li data-type="sect1"><a href="ch05.html#idp792944">Tools</a></li>
-</ol></li><li data-type="chapter"><a href="ch06.html#idp800848">The monitoring infrastructure is critical</a><ol>
+<li data-type="sect1"><a href="ch05.html#idp792144">Tools</a></li>
+</ol></li><li data-type="chapter"><a href="ch06.html#idp801392">The monitoring infrastructure is critical</a><ol>
 
 
 
 
 
 
-<li data-type="sect1"><a href="ch06.html#idp812288">Tools</a></li>
-</ol></li><li data-type="chapter"><a href="ch07.html#idp801952">Tests done in code, not by a QA department</a><ol>
+<li data-type="sect1"><a href="ch06.html#idp811808">Tools</a></li>
+</ol></li><li data-type="chapter"><a href="ch07.html#idp819184">Tests done in code, not by a QA department</a><ol>
 
 
 
 
-<li data-type="sect1"><a href="ch07.html#idp817408">Tools</a></li>
-</ol></li><li data-type="chapter"><a href="ch08.html#idp826688">Appendix A: Language stack quick reference</a><ol>
+<li data-type="sect1"><a href="ch07.html#idp817040">Tools</a></li>
+</ol></li><li data-type="chapter"><a href="ch08.html#idp825104">Appendix A: Language stack quick reference</a><ol>
 
 
 
 
 
-<li data-type="sect1"><a href="ch08.html#idp835088">Ruby</a></li>
-<li data-type="sect1"><a href="ch08.html#idp839696">Python</a></li>
-<li data-type="sect1"><a href="ch08.html#idp846464">node</a></li>
-<li data-type="sect1"><a href="ch08.html#idp853312">Java</a></li>
-<li data-type="sect1"><a href="ch08.html#idp856000">Go</a></li>
-</ol></li><li data-type="chapter"><a href="ch09.html#idp859104">Appendix B: Required Reading</a></li><li data-type="chapter"><a href="ch10.html#idp865936">Appendix C: Contributors</a></li></ol></nav>
+<li data-type="sect1"><a href="ch08.html#idp827792">Ruby</a></li>
+<li data-type="sect1"><a href="ch08.html#idp839168">Python</a></li>
+<li data-type="sect1"><a href="ch08.html#idp846096">node</a></li>
+<li data-type="sect1"><a href="ch08.html#idp853008">Java</a></li>
+<li data-type="sect1"><a href="ch08.html#idp855808">Go</a></li>
+</ol></li><li data-type="chapter"><a href="ch09.html#idp858672">Appendix B: Required Reading</a></li><li data-type="chapter"><a href="ch10.html#idp865632">Appendix C: Contributors</a></li></ol></nav>
 	   <div class="navigation">
 	      <ul>
 	        <li class="prev"><a href="ch03.html">Previous</a></li>
