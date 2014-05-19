@@ -1,43 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-<head>
-  <title>Distributed Developer Stack (DDS) Field Guide</title>
-  <link href="theme/html/stylesheets/styles.css" media="all" rel="stylesheet" type="text/css"/>
-  <link href="theme/html/stylesheets/shared.css" media="all" rel="stylesheet" type="text/css"/>
-  <link href="theme/html/stylesheets/syntax.css" media="all" rel="stylesheet" type="text/css"/>
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-   <script type="text/javascript" src="theme/html/javascripts/jquery.js"> </script>
-   <script type="text/javascript" src="theme/html/javascripts/bootstrap.min.js"> </script>
-   <script type="text/javascript" src="theme/html/javascripts/disqus.js"> </script>
+    <title>Distributed Developer Stack (DDS) Field Guide</title>
 
+    <!-- Bootstrap core CSS -->
+   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"/>
    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
 
-   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"/>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"> </script>
+   <script type="text/javascript" src="theme/html/javascripts/disqus.js"> </script>
+
+   <link rel="stylesheet" href="theme/html/stylesheets/atlas.css"/>
 
 
-</head>
-<body>
+  </head>
+
+  <body data-type="book">
+
+    <div class="navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">	
+	  <img class="logo" src="theme/html/assets/logo-white.svg"/>
+          <a class="title" href="#">Distributed Developer Stack (DDS) Field Guide</a>
+        </div>
+
+	<div id="slideout">
+	    <span class="toc-control fa fa-bars"/>
+	    <div id="slideout_inner">
+		
+		 <div class="input-group">
+	            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term"/>
+	            <div class="input-group-btn">
+	               <button class="btn btn-default search-button" type="submit"><span class="fa fa-search"/></button>
+	            </div>
+	         </div>   
+	 
+	        <nav data-type="toc"/>
+	    </div>
+	</div>
 	
-	
- <a href="https://github.com/odewahn/devops-field-guide"><img style="z-index: 999999999; position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Discuss on GitHub"/></a>
- 
-  <div class="navbar">
+      </div>
+    </div>
+
+
     <div class="container">
-      <img style="margin:12px; height: 25px" src="theme/html/assets/logo-white.svg"/>
-      <ul class="nav pull-left">
-        <li id="dropdown-1"/>
-      </ul>
-    </div>
-    <div class="subhead">
-    </div>
-  </div>
-
-
-  <div class="container" id="main">
-	
-      <div class="row-fluid down40">	
-         <div class="span8">		
-            <section data-type="chapter" data-pdf-bookmark="Chapter 1. The cloud is the default platform" id="idm4368672">
+      <div class="row">
+        <div class="col-md-12">
+          <section xmlns="http://www.w3.org/1999/xhtml" data-type="chapter" data-pdf-bookmark="Chapter 1. The cloud is the default platform" id="idm4732064">
 <h1>The cloud is the default platform</h1>
 
 <p><span class="drop fa fa-cloud fa-5x pull-left fa-border"/></p>
@@ -50,7 +64,7 @@
 <li>Internal cloud and PaaS services.</li>
 </ul>
 <p>These are tools and services you’re likely to encounter here:</p>
-<section data-type="sect1" data-pdf-bookmark="Traditional Cloud Providers" id="idm1284720">
+<section data-type="sect1" data-pdf-bookmark="Traditional Cloud Providers" id="idm1644048">
 <h1>Traditional Cloud Providers</h1>
 
 <p>There are lots of hosting services. Here are some of the more popular.</p>
@@ -61,7 +75,7 @@
 <li><a href="https://www.digitalocean.com/">Digital Ocean</a>. A lower cost alternative to AWS that says it focuses on developers. Seems to be what a lot of developers use for side projects.</li>
 </ul>
 </section>
-<section data-type="sect1" data-pdf-bookmark="Hosted PaaS" id="idp430384">
+<section data-type="sect1" data-pdf-bookmark="Hosted PaaS" id="idp65424">
 <h1>Hosted PaaS</h1>
 
 <p>Hosted PaaS services add a layer on top of the raw offerings of hosting providers.</p>
@@ -69,7 +83,7 @@
 <li><a href="https://www.heroku.com/">Heroku</a>.  A PaaS service built on top of AWS. Unlike AWS, which gives you a raw machine, Heroku allows the developer to push an application into the service and have a corresponding application stack provision for the machine.</li>
 </ul>
 </section>
-<section data-type="sect1" data-pdf-bookmark="Internal Services" id="idp442624">
+<section data-type="sect1" data-pdf-bookmark="Internal Services" id="idp77440">
 <h1>Internal Services</h1>
 
 <p>These are tools that create virtual internal clouds (i.e., on premise). While they’re technically running in your own internal datacenter, they enable the concept of scalable, on-demand resources.</p>
@@ -81,139 +95,35 @@
 </ul>
 </section>
 </section>
-         </div>
-         <div class="span4">
-	  <h2>Subscribe by email</h2>
-	  <div id="mc_embed_signup">
-	    <form action="http://herokuapp.us7.list-manage1.com/subscribe/post?u=5fec48c7e90ffefc48144196d&amp;id=7f2979d0d9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-	      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address"/>
-	      <br/>
-              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"/>
-	      <div style="position: absolute; left: -5000px;">
-	        <input type="text" name="b_5fec48c7e90ffefc48144196d_7f2979d0d9" tabindex="-1" value=""/>
-	      </div>
-	    </form>
-	  </div>
-
-
-	   <h2>Key Themes</h2>
-              <nav data-type="toc" id="idp6093696"><ol><li data-type="chapter"><a href="ch01.html#idm4368672">The cloud is the default platform</a><ol>
-
-
-
-
-
-
-
-
-<li data-type="sect1"><a href="ch01.html#idm1284720">Traditional Cloud Providers</a></li>
-<li data-type="sect1"><a href="ch01.html#idp430384">Hosted PaaS</a></li>
-<li data-type="sect1"><a href="ch01.html#idp442624">Internal Services</a></li>
-</ol></li><li data-type="chapter"><a href="ch02.html#idp710240">CI servers deploy code, not ops</a><ol>
-
-
-
-
-
-
-
-<li data-type="sect1"><a href="ch02.html#idp726016">Tools</a></li>
-</ol></li><li data-type="chapter"><a href="ch03.html#idp731088">The codebase is in git</a><ol>
-
-
-
-
-
-
-
-
-<li data-type="sect1"><a href="ch03.html#idp751664">Tools</a></li>
-</ol></li><li data-type="chapter"><a href="ch04.html#idp762464">The entire application runs locally in development</a><ol>
-
-
-
-
-
-<li data-type="sect1"><a href="ch04.html#idp765808">Tools</a><ol>
-
-
-
-
-<li data-type="sect2"><a href="ch04.html#idp774480">Replicating 3rd party APIs locally</a></li>
-</ol></li>
-</ol></li><li data-type="chapter"><a href="ch05.html#idp777296">The environment is automated in the code</a><ol>
-
-
-
-
-
-<li data-type="sect1"><a href="ch05.html#idp792144">Tools</a></li>
-</ol></li><li data-type="chapter"><a href="ch06.html#idp801392">The monitoring infrastructure is critical</a><ol>
-
-
-
-
-
-
-<li data-type="sect1"><a href="ch06.html#idp811808">Tools</a></li>
-</ol></li><li data-type="chapter"><a href="ch07.html#idp819184">Tests done in code, not by a QA department</a><ol>
-
-
-
-
-<li data-type="sect1"><a href="ch07.html#idp817040">Tools</a></li>
-</ol></li><li data-type="chapter"><a href="ch08.html#idp825104">Appendix A: Language stack quick reference</a><ol>
-
-
-
-
-
-<li data-type="sect1"><a href="ch08.html#idp827792">Ruby</a></li>
-<li data-type="sect1"><a href="ch08.html#idp839168">Python</a></li>
-<li data-type="sect1"><a href="ch08.html#idp846096">node</a></li>
-<li data-type="sect1"><a href="ch08.html#idp853008">Java</a></li>
-<li data-type="sect1"><a href="ch08.html#idp855808">Go</a></li>
-</ol></li><li data-type="chapter"><a href="ch09.html#idp858672">Appendix B: Required Reading</a></li><li data-type="chapter"><a href="ch10.html#idp865632">Appendix C: Contributors</a></li></ol></nav>
-	   <div class="navigation">
-	      <ul>
-	        <li class="prev"><a href="toc01.html">Previous</a></li>
-	        <li class="next"><a href="ch02.html">Next</a></li>
-	      </ul>
-	   </div>	   
-	 </div>
-      </div>
-
-      <div class="row-fluid">
-	 <div class="span12">
-            <div id="disqus_thread"/>
-	 </div>
-      </div>
-
-
-  </div>
-
-  <footer>
-    <div class="container">
-      <div class="row-fluid">
-        <div class="span4">
-          <span class="logo"/>
-          <p>© 2014, O'Reilly Media, Inc.</p>
-          <p class="small">All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.</p>
         </div>
-        <div class="span4">
-          <ul>
-            <li>Legal</li>
-            <li><a href="/tos">Terms of Service</a></li>
-            <li><a href="http://oreilly.com/oreilly/privacy.csp">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="span4">
-	   <a class="btn btn-medium btn-info" href="https://github.com/odewahn/devops-field-guide/issues" target="_blank">Feedback</a>
-	</div>
       </div>
     </div>
-  </footer>
+  
+    <div class="container">
+	<div class="row">
+	  <div class="pagination">
+	      <ul>
+	        <li class="prev"><span class="fa fa-chevron-left"/> <a xmlns="http://www.w3.org/1999/xhtml" href="toc01.html">Previous</a></li>
+	        <li class="next"><a xmlns="http://www.w3.org/1999/xhtml" href="ch02.html">Next</a> <span class="fa fa-chevron-right"/></li>
+	      </ul>
+	  </div>       
+	</div>
+    </div>
 
+    <div class="container">
+       <div class="row">
+          <div class="col-md-12 disqus">
+	     <div id="disqus_thread"/>
+	   </div>
+       </div>
+    </div>
+ 
+    <div class="footer">
+      <footer>
+        <p>© O'Reilly Media, 2014</p>
+      </footer>
+    </div>
 
-</body>
+  </body>
+
 </html>
