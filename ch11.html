@@ -125,30 +125,22 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <section data-type="chapter" data-pdf-bookmark="Chapter 4. The entire application runs locally in development" id="idp543072">
-<h1>The entire application runs locally in development</h1>
+          <section data-type="chapter" data-pdf-bookmark="Chapter 11. Appendix D: Radar Post" id="idp647328">
+<h1>Appendix D: Radar Post</h1>
 
-<p><span class="drop fa fa-laptop fa-5x pull-left fa-border"/></p>
-<p>One of the key breakthroughs of the devops movement is it gives developers a simple way to install and run the entire app on their local machine. Being able to run it on their own system encourages creativity and flexibility, and make development much more fun and productive.</p>
-<p><a href="http://www.vagrantup.com/">Vagrant</a> is the key tool here -- basically, it takes the recipes you created with your environment tool (i.e., your chef or puppet files) and <em>provisions</em> (creates) a virtual machine that runs in a tool like <a href="https://www.virtualbox.org/">Virtualbox</a> or <a href="http://www.vmware.com/">VMWare</a>. Vagrant automatically maps a virtual drive from the virtual instance back to the host machine, allowing the developer to use his or her favorite editor / IDE, but still run the application in an environment that matches the production environment as closely as possible.</p>
-<section data-type="sect1" data-pdf-bookmark="Tools" id="idp546880">
-<h1>Tools</h1>
-
-<p>The following table summarizes tools you will encounter:</p>
+<p><a href="http://radar.oreilly.com/2014/05/everything-is-distributed.html">Everything is Distributed</a> and <a href="http://radar.oreilly.com/2014/05/beyond-the-stack.html">Beyond the stack</a> began exploring the “a new toolset has grown up to support the development of massively distributed applications” that we’re calling the Distributed Development Stack (DDS).  The DDS is a mix of tools, techniques, and practices that have developed as platforms like AWS and Heroku have become the default place to deploy new applications.  </p>
+<p>As Mike observed, the shift from well-tended, internal servers to external, disposable VMs (memorably described by Noah Slater in "<a href="https://blog.engineyard.com/2014/pets-vs-cattle">Pets vs. Cattle</a>“) has had profound consequences.  To help provide a framework for understanding the explosion of new trends and tools in the space, we’ve created the <a href="http://odewahn.github.io/dds-field-guide/">Field Guide for the Distributed Development Stack</a>.  The field guide is organized into large buckets based on a general observation about DDS. These include:</p>
 <ul>
-<li><a href="http://www.vagrantup.com/">vagrant</a>.  “Create and configure lightweight, reproducible, and portable development environments.”</li>
-<li><a href="https://www.virtualbox.org/">virtualbox</a>. “VirtualBox is a powerful x86 and AMD64/Intel64  <a href="https://www.virtualbox.org/wiki/Virtualization">virtualization</a> product for enterprise as well as home use.” Free and open source! </li>
-<li><a href="http://www.vmware.com/">vmware</a>. One of the original virtualization solutions; Vagrant has a paid version that targets vmware fusion.</li>
+<li><a href="http://odewahn.github.io/dds-field-guide/ch01.html">The cloud is the default platform</a></li>
+<li><a href="http://odewahn.github.io/dds-field-guide/ch02.html">CI servers deploy code, not ops</a></li>
+<li><a href="http://odewahn.github.io/dds-field-guide/ch03.html">The codebase is in git</a></li>
+<li><a href="http://odewahn.github.io/dds-field-guide/ch04.html">The entire application runs locally in development</a></li>
+<li><a href="http://odewahn.github.io/dds-field-guide/ch05.html">The environment is automated in the code</a></li>
+<li><a href="http://odewahn.github.io/dds-field-guide/ch06.html">The monitoring infrastructure is critical</a></li>
+<li><a href="http://odewahn.github.io/dds-field-guide/ch07.html">Tests done in code, not by a QA department</a></li>
 </ul>
-<section data-type="sect2" data-pdf-bookmark="Replicating 3rd party APIs locally" id="idp555072">
-<h2>Replicating 3rd party APIs locally</h2>
-
-<p>The develop “everything on localhost” approach breaks down somewhat when an application makes extensive use of 3rd party APIs.  Clearly, you could not siply install Twitter or Facebook on your local machine.  To get around this, there are a number of tools for mocking up the API results returned by these services.  These include:</p>
-<ul>
-<li><a href="https://github.com/sideshowcoder/canned">canned</a>. “Server to respond with fake API responses, by using a directory of files for finding out what to say.”</li>
-</ul>
-</section>
-</section>
+<p>Each bucket then lists a set of tools associated tools.  For example, in the “The environment is automated in the code” you’ll find a list of tools like <a href="http://www.getchef.com/chef/">chef</a>, <a href="http://puppetlabs.com/">puppet</a>, and <a href="http://www.ansible.com/home">ansible</a>.  While it’s certainly true that tools are only a small part of the overall DDS story, it’s also true that they are the main way most people will implement these concepts into everyday practice.</p>
+<p>In addition to being a useful framework, the Field Guide is also meant to be a living resource.  So, <a href="https://github.com/odewahn/dds-field-guide">we’ve put the source on GitHub</a> and invite you to contribute.  If you feel like we’ve missed a tool (which we most certainly have, since new things are popping up every day) or a major theme, then fork the repo and send me a pull request.  We’ll be keep this document up to date and republishing it as we watch this trend continue to grow. </p>
 </section>
         </div>
       </div>
@@ -158,8 +150,8 @@
 	<div class="row">
 	  <div class="pagination">
 	      <ul>
-	        <li class="prev"><span class="fa fa-chevron-left"/> <a href="ch03.html">Previous</a></li>
-	        <li class="next"><a href="ch05.html">Next</a> <span class="fa fa-chevron-right"/></li>
+	        <li class="prev"><span class="fa fa-chevron-left"/> <a href="ch10.html">Previous</a></li>
+	        <li class="next"> <span class="fa fa-chevron-right"/></li>
 	      </ul>
 	  </div>       
 	</div>
